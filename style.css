@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,700;1,500&family=Raleway:wght@100;200;300;400;600&family=Roboto:wght@400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Alkalami", serif;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.logo {
+  cursor: pointer;
+  max-width: 150px;
+}
+.nav-list {
+  display: flex;
+  gap: 1.1rem;
+}
+.list-item {
+  font-size: 1.3rem;
+  color: rebeccapurple;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.list-item:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid rebeccapurple;
+}
+.menu {
+  display: none;
+  cursor: pointer;
+}
+.menu .fa-bars {
+  font-size: 2rem;
+}
+.register-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register-wrapper {
+  text-align: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  width: 60%;
+  height: 500px;
+  border-radius: 10px;
+  padding: 30px;
+}
+.register-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0rem;
+}
+.register-info .fa-user-circle {
+  font-size: 2rem;
+}
+.register-text {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+form > div {
+  margin-bottom: 0.8rem;
+}
+input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid darkgray;
+}
+::placeholder {
+  font-size: 1.2rem;
+}
+.email-wrapper {
+  position: relative;
+}
+.fa-envelope-o {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+}
+.password-wrapper {
+  position: relative;
+}
+.fa-key {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+}
+.btn {
+  width: 100%;
+  padding: 6px;
+  font-size: 1.2rem;
+  background-color: rebeccapurple;
+  color: #ffff;
+  border: none;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 768px) {
+  .list-item {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  .register-wrapper {
+    width: 90%;
+  }
+}
